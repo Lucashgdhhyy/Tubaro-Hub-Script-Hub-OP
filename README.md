@@ -52,7 +52,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Redz Hub",
+	Name = "Night Hub",
 	Callback = function()  
       		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/NIGHT-HUB"))()
     end
