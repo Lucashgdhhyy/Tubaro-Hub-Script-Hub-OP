@@ -125,6 +125,18 @@ Tab:AddButton({
     end
 })
 
+local Tab = Window:MakeTab({
+	Name = "Funky Friday",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Wally(Nao testado em delta)",
+	Callback = function()  
+      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()      
+    end
+})
 
 local Tab = Window:MakeTab({
 	Name = "CMDS Admins",
