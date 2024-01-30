@@ -92,15 +92,15 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "doors",
+	Name = "Muscle legends",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "King Hub",
+	Name = "Speed X hub",
 	Callback = function()  
-      		print("button pressed")     
+      		print("button pressed")     loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends'),true))()
     end
 })
 
