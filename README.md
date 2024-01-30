@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Tubaro Hub|Scripts Hub V1.1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Tubaro Br Hub|Scripts Hub V1.2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "Start",
 	Icon = "rbxassetid://4483345998",
@@ -52,7 +52,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Night Hub",
+	Name = "Night Hub(Nao funcionando)",
 	Callback = function()  
       		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/NIGHT-HUB"))()
     end
@@ -112,6 +112,19 @@ Tab:AddButton({
     end
 })
 
+local Tab = Window:MakeTab({
+	Name = "Haze Piece",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Haze piece(Nao funcionando)",
+	Callback = function()  
+      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/JuninhoOGado/ScriptsSite/main/Script230"))()        
+    end
+})
+
 
 local Tab = Window:MakeTab({
 	Name = "CMDS Admins",
@@ -125,20 +138,6 @@ Tab:AddButton({
       		print("button pressed")   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end
 })
-
-local Tab = Window:MakeTab({
-	Name = "Haze Piece",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Infinity yield",
-	Callback = function()  
-      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/JuninhoOGado/ScriptsSite/main/Script230"))()        
-    end
-})
-
 
 -- Dropdown:Refresh(List<table>,true)
 --Dropdown:Set("dropdown option")
