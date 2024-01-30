@@ -52,6 +52,14 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+	Name = "Redz Hub",
+	Callback = function()  
+      		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/NIGHT-HUB"))()
+    end
+})
+
+
+Tab:AddButton({
 	Name = "Zee Hub",
 	Callback = function()  
       		print("button pressed")     loadstring(game:HttpGet("https://link.trwxz.com/LS-Zee-Hub-VIP"))()
@@ -104,18 +112,6 @@ Tab:AddButton({
     end
 })
 
-local Tab = Window:MakeTab({
-	Name = "Haze Piece",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Junin Script",
-	Callback = function()  
-      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/JuninhoOGado/ScriptsSite/main/Script230"))()        
-    end
-})
 
 local Tab = Window:MakeTab({
 	Name = "CMDS Admins",
@@ -130,6 +126,18 @@ Tab:AddButton({
     end
 })
 
+local Tab = Window:MakeTab({
+	Name = "Haze Piece",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Infinity yield",
+	Callback = function()  
+      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/JuninhoOGado/ScriptsSite/main/Script230"))()        
+    end
+})
 
 
 -- Dropdown:Refresh(List<table>,true)
