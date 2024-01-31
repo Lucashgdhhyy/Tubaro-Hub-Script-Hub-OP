@@ -52,9 +52,9 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Night Hub(Nao funcionando)",
+	Name = "Annie Hub(Vai bugar o Tubaro)",
 	Callback = function()  
-      		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/NIGHT-HUB"))()
+      		print("button pressed")        loadstring(game:HttpGet("https://raw.githubusercontent.com/Anniecuti/Free-Scr/main/Annie-Hub.lua"))() 
     end
 })
 
