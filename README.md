@@ -1,145 +1,78 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Tubaro Hub|Universal Scripts", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-local Tab = Window:MakeTab({
-	Name = "Start",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-OrionLib:MakeNotification({
-	Name = "Super cool",
-	Content = "Script Hub",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
+local ArrayField = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3AArrayfield%20Library"))()
+--Documentation url: https://docs.sirius.menu/community/arrayfield
 
-local Tab = Window:MakeTab({
-	Name = "blade ball hubs",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local Window = ArrayField:CreateWindow({
+        Name = "Tubaro Hub",
+        LoadingTitle = "Tubaro Hub",
+        LoadingSubtitle = "By LK Team",
+        ConfigurationSaving = {
+            Enabled = false,
+            FolderName = nil, -- Create a custom folder for your hub/game
+            FileName = "Tubaro Hub Script Hub"
+        },
+        Discord = {
+            Enabled = false,
+            Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+            RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+        KeySystem = false, -- Set this to true to use our key system
+        KeySettings = {
+            Title = "Tubaro Key system",
+            Subtitle = "Key system",
+            Note = "Hello Thank you for use my script",
+            FileName = "Tubaro Hub Key System",
+            SaveKey = false,
+            GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like ArrayField to get the key from
+            Key = {"tubaro",'LkHub'},
+            Actions = { 
+                [1] = { 
+                    Text = 'Copy you key',
+                    OnPress = function()             
 
-Tab:AddButton({
-	Name = "Bedol Hub",
-	Callback = function()  
-      		print("button pressed")      loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))() 
-    end
-})
-Tab:AddButton({
-	Name = "Twilight ",
-	Callback = function() 
-      		print("button pressed")   loadstring(game:HttpGet('https://raw.githubusercontent.com/0x1s2s/twilightxd/main/twilightlol'))()   
-   end
-})
-   
-Tab:AddButton({
-	Name = "Noname script ",
-	Callback = function()  
-      		print("button pressed")   loadstring(game:HttpGet("https://paste.gg/p/anonymous/0425151104df470cb8203508e256b40a/files/aff63dcd12b04bfe8f6d9851eb6b2d3e/raw"))()
-    end
-})
+                    end,
+                }
+            },
+        }
+    })
+    local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image  
 
-local Tab = Window:MakeTab({
-	Name = "blox fruit",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local Button = Tab:CreateButton({
+        Name = "Bedol Hub",
+        Info = {
+            Title = 'Bedol Hub',
+            Description = 'Bedol Hub.',
+        },
+        Interact = 'Execute',
+        Callback = function()        loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))()          
+            print('Pressed')
+        end,
+    })
+  
+local Button = Tab:CreateButton({
+        Name = "Twilight Hub",
+        Info = {
+            Title = 'Twilight',
+            Description = 'Bedol Hub.',
+        },
+        Interact = 'Execute',
+        Callback = function()        loadstring(game:HttpGet('https://raw.githubusercontent.com/0x1s2s/twilightxd/main/twilightlol'))()        
+            print('Pressed')
+        end,
+    })
 
-Tab:AddButton({
-	Name = "Redz Hub",
-	Callback = function()  
-      		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
-    end
-})
-
-Tab:AddButton({
-	Name = "Annie Hub(So use em emulador)",
-	Callback = function()  
-      		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/Anniecuti/Free-Scr/main/Annie-Hub.lua"))() 
-    end
-})
-
-
-Tab:AddButton({
-	Name = "Zee Hub",
-	Callback = function()  
-      		print("button pressed")     loadstring(game:HttpGet("https://link.trwxz.com/LS-Zee-Hub-VIP"))()
-     end
-})
-
-Tab:AddButton({
-	Name = "M Tries",
-	Callback = function()  
-      		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
-     end
-})
-
-local Tab = Window:MakeTab({
-	Name = "Pet simulator 99",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Redz Hub(no key)",
-	Callback = function()  
-      		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
-    end
-})
-
-local Tab = Window:MakeTab({
-	Name = "doors",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "King Hub",
-	Callback = function()  
-      		print("button pressed")     loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
-    end
-})
-
-local Tab = Window:MakeTab({
-	Name = "Muscle legends",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Speed X hub",
-	Callback = function()  
-      		print("button pressed")     loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends'),true))()
-    end
-})
-
-local Tab = Window:MakeTab({
-	Name = "Legend of speed",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-	})
-
-Tab:AddButton({
-	Name = "TBao",
-	Callback = function()  
-      		print("button pressed")                 loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHublegendsofspeed"))()     
-    end
-})
-
-local Tab = Window:MakeTab({
-	Name = "CMDS Admins",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-	})
-	
-Tab:AddButton({
-	Name = "Infinity yield",
-	Callback = function()  
-      		print("button pressed")   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    end
-})
+ local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image 
 
 
--- Dropdown:Refresh(List<table>,true)
---Dropdown:Set("dropdown option")
-OrionLib:Init()
--- destroying the interface: OrionLib:Destroy() 
+local Button = Tab:CreateButton({
+        Name = "Redz Hub",
+        Info = {
+            Title = 'Redz Hub',
+            Description = '.',
+        },
+        Interact = 'Execute',
+        Callback = function()        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+            print('Pressed')
+        end,
+    })
+
+
